@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crumb & Butter</title>
+    <style>
+        :root {
+            --primary: #c0392b;
+            --secondary: #922b21;
+            --accent: #f39c12;
+            --background: #fff;
+            --text: #333;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background);
+            color: var(--text);
+        }
+
+        .hero {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+            background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .cta-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cta {
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 0.5rem;
+            margin: 0 1rem;
+        }
+
+        .cta-primary {
+            background-color: var(--primary);
+        }
+
+        .cta-secondary {
+            background-color: var(--secondary);
+        }
+
+        .services {
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin: 1rem;
+            display: inline-block;
+            width: calc(33% - 2rem);
+        }
+
+        .service-card h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background-image: linear-gradient(45deg, var(--secondary), var(--accent));
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Artisan Sourdough, Hand-Laminated Croissants & Specialty Coffee in Lahore</h1>
+            <p>Indulge in our carefully crafted, small-batch baked goods and single-origin specialty coffee</p>
+            <div class="cta-container">
+                <a href="#" class="cta cta-primary">Order Now</a>
+                <a href="#menu" class="cta cta-secondary">View Menu</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h2>Sourdough Loaf</h2>
+            <p>Our signature bread made with natural yeast and hand-fermented for 24 hours</p>
+        </div>
+        <div class="service-card">
+            <h2>Pain au Chocolat</h2>
+            <p>Flaky, buttery croissant filled with dark chocolate chunks</p>
+        </div>
+        <div class="service-card">
+            <h2>Cinnamon Roll</h2>
+            <p>Soft and fluffy dough topped with a sweet cinnamon sugar mixture</p>
+        </div>
+        <div class="service-card">
+            <h2>Ciabatta</h2>
+            <p>Italian-style bread made with olive oil, yeast, and salt</p>
+        </div>
+        <div class="service-card">
+            <h2>Croissant</h2>
+            <p>Layered pastry dough filled with butter and baked to golden perfection</p>
+        </div>
+        <div class="service-card">
+            <h2>Lemon Tart</h2>
+            <p>Tart made with a shortcrust pastry, topped with a lemon curd and fresh berries</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Crumb & Butter | Phone: <a href="tel:+923218887766">0321-8887766</a> | Email: <a href="mailto:mharis.py0@gmail.com">mharis.py0@gmail.com</a></p>
+        <p>© 2023 Crumb & Butter. All rights reserved.</p>
+    </footer>
+</body>
+</html>
